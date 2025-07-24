@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 # Replace with your actual MongoDB connection URI
-client = MongoClient("mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://<Amaravathi_2002>:<Amara_2002>@cluster0.mongodb.net/?retryWrites=true&w=majority")
 
 # Choose database and collection
 db = client["todo_database"]
