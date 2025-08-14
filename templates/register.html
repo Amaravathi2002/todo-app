@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - To-Do App</title>
+    <title>Register Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f9;
+            background: #f2f4f7;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
         }
-        .register-container {
-            background: white;
+        .register-box {
+            background: #fff;
             padding: 25px 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             width: 320px;
         }
         h2 {
@@ -41,13 +41,13 @@
             font-size: 14px;
         }
         input:focus {
-            border-color: #2563eb;
+            border-color: #007bff;
             outline: none;
         }
         button {
             width: 100%;
             padding: 10px;
-            background: #2563eb;
+            background: #007bff;
             border: none;
             border-radius: 5px;
             color: white;
@@ -55,7 +55,7 @@
             cursor: pointer;
         }
         button:hover {
-            background: #1e40af;
+            background: #0056b3;
         }
         .login-link {
             text-align: center;
@@ -63,7 +63,7 @@
             font-size: 14px;
         }
         .login-link a {
-            color: #2563eb;
+            color: #007bff;
             text-decoration: none;
         }
         .login-link a:hover {
@@ -72,11 +72,11 @@
     </style>
 </head>
 <body>
-    <div class="register-container">
-        <h2>Create Account</h2>
-        <form action="/register" method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
+    <div class="register-box">
+        <h2>Register</h2>
+        <form action="#" method="POST">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
@@ -90,10 +90,10 @@
             <label for="confirm">Confirm Password</label>
             <input type="password" id="confirm" name="confirm" required>
 
-            <button type="submit">Register</button>
+            <button type="submit">Sign Up</button>
         </form>
         <div class="login-link">
-            Already have an account? <a href="/login">Login here</a>
+            Already have an account? <a href="#">Login</a>
         </div>
     </div>
 </body>
